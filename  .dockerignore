@@ -1,0 +1,23 @@
+# Maven
+target/
+.mvn/
+!.mvn/wrapper/maven-wrapper.jar
+**/*.iml
+.idea/
+.classpath
+.project
+.settings/
+.mvn/timing.properties
+
+# Git
+.git
+.gitignore
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs & temp
+*.log
+logs/
+tmp/
