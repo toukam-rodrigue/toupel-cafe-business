@@ -3,6 +3,7 @@ package com.pyramid.toupel.controller;
 
 import com.pyramid.toupel.model.Transaction;
 import com.pyramid.toupel.service.TransactionService;
+import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -10,7 +11,6 @@ import java.util.List;
 @RestController
 @RequestMapping("/transactions")
 public class TransactionController {
-
 
     private final TransactionService service;
 
@@ -24,6 +24,7 @@ public class TransactionController {
     }
 
     @PostMapping
+    @ResponseStatus(HttpStatus.CREATED)
     public Transaction create(@RequestBody Transaction transaction) {
         return service.add(transaction);
     }

@@ -1,6 +1,8 @@
 spring:
   application:
     name: toupel-cafe-business
+  profiles:
+    active: dev
   datasource:
     url: jdbc:h2:mem:testdb
     driver-class-name: org.h2.Driver
